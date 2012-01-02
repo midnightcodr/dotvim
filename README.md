@@ -7,6 +7,6 @@
 
 ## Notes
 	If you already have ~/.vim/ and ~/.vimrc, you might want to
-back them up first before running the above commands:
-	mv ~/.vim{,.bak}
-	mv ~/.vimrc{,.bak}
+	back them up first before running the above commands:
+		mv ~/.vim{,.bak}
+		mv ~/.vimrc{,.bak}
