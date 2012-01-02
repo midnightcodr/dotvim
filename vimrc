@@ -1,5 +1,5 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-colorscheme desert
+colorscheme wombat
 filetype plugin on
