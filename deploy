@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+echo "This script will replace your existing ~/.vimrc and ~/.vim/"
+read -p "Continue? (yN)" -n 1 ans
+if [ "$ans" == "y" -o "$ans" == "Y" ]; then
+	echo
+	cd ~
+	[ -f ~/.vimrc ] && mv ~/.vimrc{,.orig} && echo "~/.vimrc is backed up to ~/.vimrc.orig"
+	[ -d ~/.vim ] && mv ~/.vim{,.orig} && echo "~/.vim/ is backed up to ~/.vim.orig/"
+	echo "Start deploying"
+	cd ~
+	git clone http://github.com/midnightcodr/dotvim.git ~/.vim
+	ln -s ~/.vim/vimrc ~/.vimrc
+	cd ~/.vim
+	git submodule update --init
+else
+	echo
+	echo "Aborted."
+fi
