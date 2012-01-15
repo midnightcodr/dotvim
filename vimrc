@@ -1,3 +1,4 @@
+set tabstop=4 shiftwidth=4 softtabstop=4
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
