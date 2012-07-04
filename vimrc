@@ -18,3 +18,4 @@ set hlsearch
 noremap <silent> <Space> :set hlsearch! hlsearch?<CR>
 command Jslint !jslint --white --eqeq %
 nnoremap <leader>j :Jslint<CR>
+au BufNewFile,BufRead *.tpl set filetype=tpl
