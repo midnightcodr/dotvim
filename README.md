@@ -18,3 +18,4 @@
 
 ## Updates
 	7/3/2012, added php smarty .tpl support in snipmate and created my first tpl snippet (see .vim/snippets/tpl.snippets)
+	7/4/2012, enable html snippets in .php file, thanks to http://snipplr.com/view/41134/
