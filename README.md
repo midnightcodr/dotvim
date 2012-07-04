@@ -15,3 +15,6 @@
 	back them up first before running the above commands:
 		mv ~/.vim{,.bak}
 		mv ~/.vimrc{,.bak}
+
+## Updates
+	7/3/2012, added php smarty .tpl support in snipmate and created my first tpl snippet (see .vim/snippets/tpl.snippets)
