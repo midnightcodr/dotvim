@@ -6,7 +6,7 @@ if &term == "xterm"
     set t_Co=256
 endif
 syntax on
-colorscheme desert
+colorscheme wombat
 filetype plugin on
 autocmd BufNewFile,BufRead *.txt,*.htm,*.html,README,README.* set spell
 if (v:version >= 700) 
@@ -20,3 +20,6 @@ command Jslint !jslint --white --eqeq %
 nnoremap <leader>j :Jslint<CR>
 au BufNewFile,BufRead *.tpl set filetype=tpl
 au BufNewFile,BufRead *.php set filetype=php.html
+
+" require jshint (node) installed
+nmap <F4> :w<CR>:make<CR>:cw<CR>
