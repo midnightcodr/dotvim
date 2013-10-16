@@ -6,7 +6,12 @@ if &term == "xterm"
     set t_Co=256
 endif
 syntax on
-colorscheme wombat256mod
+if ( $ITERM_PROFILE == "light" )
+	colorscheme solarized
+	set background=light
+else
+	colorscheme wombat256mod
+endif
 filetype plugin on
 autocmd BufNewFile,BufRead *.txt,*.htm,*.html,README,README.* set spell
 if (v:version >= 700) 
