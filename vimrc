@@ -28,3 +28,6 @@ au BufNewFile,BufRead *.php set filetype=php.html
 
 " require jshint (node) installed
 nmap <F4> :w<CR>:make<CR>:cw<CR>
+set number
+highlight clear SignColumn
+map <c-f> :call JsBeautify()<cr>
