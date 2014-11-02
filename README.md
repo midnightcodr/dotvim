@@ -16,6 +16,16 @@
 		mv ~/.vim{,.bak}
 		mv ~/.vimrc{,.bak}
 
+## Usage examples
+* beautify sql statements
+`\sf`
+
+* beautify js file
+`ctrl + f`
+
+* Scaffold an html5 in seconds: (in insert mode) , type `html5 [tab]`
+
 ## Updates
+	11/1/2014, added vim-jsbeautify, vim-gitgutter, SQLUtilities for vim
 	7/3/2012, added php smarty .tpl support in snipmate and created my first tpl snippet (see .vim/snippets/tpl.snippets)
 	7/4/2012, enable html snippets in .php file, thanks to http://snipplr.com/view/41134/
