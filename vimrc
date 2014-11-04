@@ -31,3 +31,9 @@ nmap <F4> :w<CR>:make<CR>:cw<CR>
 set number
 highlight clear SignColumn
 map <c-f> :call JsBeautify()<cr>
+" workaround for mac osx vim
+" https://github.com/maksimr/vim-jsbeautify/issues/46
+let g:config_Beautifier = {}
+let g:config_Beautifier['js'] = {}
+let g:config_Beautifier['js'].indent_style = 'tab'
+let g:config_Beautifier['js'].indent_size = '4'
