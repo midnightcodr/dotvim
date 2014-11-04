@@ -4,7 +4,7 @@
 		git clone git://github.com/midnightcodr/dotvim ~/.vim
 		ln -s ~/.vim/vimrc ~/.vimrc
 		cd ~/.vim
-		git submodule update --init
+		git submodule update --init --recursive
 	Method 2: Universal and easier way
 		git clone git://github.com/midnightcodr/dotvim
 		cd dotvim
