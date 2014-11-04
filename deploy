@@ -11,7 +11,8 @@ if [ "$ans" == "y" -o "$ans" == "Y" ]; then
 	git clone http://github.com/midnightcodr/dotvim.git ~/.vim
 	ln -s ~/.vim/vimrc ~/.vimrc
 	cd ~/.vim
-	git submodule update --init --recursive
+	git submodule update --init
+	cd bundle/vim-jsbeautify && git submodule update --init --recursive
 else
 	echo
 	echo "Aborted."
