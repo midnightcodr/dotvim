@@ -38,3 +38,5 @@ let g:config_Beautifier['js'] = {}
 let g:config_Beautifier['js'].indent_style = 'tab'
 let g:config_Beautifier['js'].indent_size = '4'
 set smartindent
+let delimitMate_expand_cr = 1
+filetype indent plugin on
