@@ -36,3 +36,4 @@ map <c-f> :call JsBeautify()<cr>
 set smartindent
 let delimitMate_expand_cr = 1
 filetype indent plugin on
+map <C-n> :NERDTreeToggle<CR>
