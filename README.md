@@ -10,7 +10,7 @@
 
 **Method 2**: Universal and easier way
 
-	git clone git://github.com/midnightcodr/dotvim
+	git clone https://github.com/midnightcodr/dotvim
 	cd dotvim
 	bash deploy
 
